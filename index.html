@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Valerii Cherna: Assessment 2</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <canvas id="myCanvas">
+            Your browser does not support the canvas tag.
+        </canvas>
+        <div class="hover-buttons">
+            <button id="firstHover">Hover me!</button>
+            <button id="secondHover">Hover me too!</button>
+        </div>
+        <div class="switcher">
+            <table>
+                <tr>
+                    <td><p id="on" onclick="switcher('on')">On</p></td>
+                    <td><p id="off" onclick="switcher('off')">Off</p></td>
+                </tr>
+            </table>
+        </div>
+        <div class="form">
+            <p>Select a country</p>
+            <input type="radio" id="ireland" name="country" value="Ireland" />
+            <label for="ireland">Ireland</label>
+            <br />
+            <input type="radio" id="france" name="country" value="France" />
+            <label for="france">France</label>
+            <br />
+            <label for="cities">The following is a city in that country:</label>
+            <select name="cities" id="cities">
+                <option value="Dublin">Dublin</option>
+                <option value="Paris">Paris</option>
+            </select>
+            <br />
+            <input onclick="changeCity()" type="submit" value="Submit" />
+        </div>
+        <div class="drag-drop">
+            <div ondrop="drop(event)" ondragover="allowDrop(event)">
+              <img id="drag1" draggable="true" ondragstart="drag(event)" src="earth.png" />
+            </div>
+            <div ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <div ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        </div>
+    </div>    
+    <script src="script.js"></script>
+</body>
+</html>

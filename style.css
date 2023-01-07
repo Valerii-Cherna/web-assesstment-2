@@ -1,0 +1,68 @@
+﻿.container {
+    width: 800px;
+}
+
+.hover-buttons {
+    background-color: aqua;
+    padding: 10px 25px;
+}
+.hover-buttons button {
+    font-size: 24px;
+    padding: 15px;
+    width: 250px;
+    background-color: blueviolet;
+    border: solid 2px #2053ec;
+}
+.hover-buttons button.hover {
+    font-size: 30px;
+    background-color: blue;
+    border-color: yellow;
+    color: yellow;
+}
+
+
+.switcher{
+    background-color: gray;
+    padding: 35px;
+}
+.switcher table{
+    height: 150px;
+}
+.switcher table, th, td {
+    border: 1px solid black;
+}
+.switcher table td {
+    padding: 35px;
+    width: 130px;
+}
+.switcher table p {
+    padding: 15px;
+    width: 50px;
+    color: white;
+    height: 50px;
+    text-align: center;
+}
+.switcher table p#on {
+    background-color: green;
+}
+.switcher table p#off {
+    background-color: red;
+    display: none;
+}
+
+.form{
+    background-color: aquamarine;
+    padding: 35px;
+}
+
+.drag-drop {
+    background-color: bisque;
+    padding: 35px;
+    display: flex;
+}
+.drag-drop div{
+    width: 150px;
+    height: 150px;
+    border: 1px solid black;
+    margin-right: 10px;
+}
